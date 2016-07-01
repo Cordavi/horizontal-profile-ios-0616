@@ -7,8 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2E6924391D21BF8A003EFAAD /* main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2E6924381D21BF8A003EFAAD /* main.storyboard */; };
+		2E69243C1D21BFB5003EFAAD /* ProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E69243B1D21BFB5003EFAAD /* ProfileViewController.m */; };
 		30B8F7AA2F22415C95D44EE5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C5289C15D60B41DBBC7AADB2 /* Foundation.framework */; };
-		4D55493D1BCC3690001E3D77 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4D55493C1BCC3690001E3D77 /* Launch Screen.storyboard */; settings = {ASSET_TAGS = (); }; };
+		4D55493D1BCC3690001E3D77 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4D55493C1BCC3690001E3D77 /* Launch Screen.storyboard */; };
 		7615DE68A7FD408294BF581F /* FISAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DD179C6C4A5A43839ECF32E8 /* FISAppDelegate.m */; };
 		D0D7835FFCD34B79AC2E7477 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E798758BBF044A70BEE06836 /* main.m */; };
 		E15752C0E46D4CEDACD0094B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2CFA4DAF6FC9457FA2C246E6 /* Images.xcassets */; };
@@ -27,6 +29,9 @@
 /* Begin PBXFileReference section */
 		09CF2CF7400647758DF7FE78 /* horizontal-profile.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "horizontal-profile.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2CFA4DAF6FC9457FA2C246E6 /* Images.xcassets */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		2E6924381D21BF8A003EFAAD /* main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = main.storyboard; path = ../main.storyboard; sourceTree = "<group>"; };
+		2E69243A1D21BFB5003EFAAD /* ProfileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProfileViewController.h; sourceTree = "<group>"; };
+		2E69243B1D21BFB5003EFAAD /* ProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProfileViewController.m; sourceTree = "<group>"; };
 		43484FA67152489395F54DC3 /* UnitTests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "UnitTests-Info.plist"; sourceTree = "<group>"; };
 		4D55493C1BCC3690001E3D77 /* Launch Screen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		6F5DB406E6C94332841A101B /* FISAppDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = FISAppDelegate.h; sourceTree = "<group>"; };
@@ -95,8 +100,11 @@
 		5FEABB93D65B470DB86EFBD5 /* horizontal-profile */ = {
 			isa = PBXGroup;
 			children = (
+				2E6924381D21BF8A003EFAAD /* main.storyboard */,
 				6F5DB406E6C94332841A101B /* FISAppDelegate.h */,
 				DD179C6C4A5A43839ECF32E8 /* FISAppDelegate.m */,
+				2E69243A1D21BFB5003EFAAD /* ProfileViewController.h */,
+				2E69243B1D21BFB5003EFAAD /* ProfileViewController.m */,
 				DE6B38C886034C4B98712280 /* Resources */,
 			);
 			path = "horizontal-profile";
@@ -199,6 +207,11 @@
 				CLASSPREFIX = FIS;
 				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = "The Flatiron School";
+				TargetAttributes = {
+					F02503E5595B4429AA6DBB3A = {
+						DevelopmentTeam = YDFM3G6EB4;
+					};
+				};
 			};
 			buildConfigurationList = 3BF3F05C5A5A409AA7D9C94E /* Build configuration list for PBXProject "horizontal-profile" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -224,6 +237,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4D55493D1BCC3690001E3D77 /* Launch Screen.storyboard in Resources */,
+				2E6924391D21BF8A003EFAAD /* main.storyboard in Resources */,
 				E15752C0E46D4CEDACD0094B /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -260,6 +274,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7615DE68A7FD408294BF581F /* FISAppDelegate.m in Sources */,
+				2E69243C1D21BFB5003EFAAD /* ProfileViewController.m in Sources */,
 				D0D7835FFCD34B79AC2E7477 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -339,6 +354,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DSTROOT = /tmp/xcodeproj.dst;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -357,6 +374,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.flatiron.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				PUBLIC_HEADERS_FOLDER_PATH = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
 			};
@@ -366,6 +384,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
 				DSTROOT = /tmp/xcodeproj.dst;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -385,6 +405,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.flatiron.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				PUBLIC_HEADERS_FOLDER_PATH = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;

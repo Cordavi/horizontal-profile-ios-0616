@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="cwB-Dy-WPX">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--Profile View Controller-->
+        <scene sceneID="tJT-uT-g5U">
+            <objects>
+                <viewController id="cwB-Dy-WPX" customClass="ProfileViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="tqw-IO-LYN"/>
+                        <viewControllerLayoutGuide type="bottom" id="nyE-AD-zLG"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="HTS-0F-Uua">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="oFN-fL-Czl">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="128"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                            </imageView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Class name" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ojh-h4-J3O">
+                                <rect key="frame" x="337" y="227" width="97" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Interesting Fact" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7vz-9I-Pjr">
+                                <rect key="frame" x="337" y="285" width="122" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="lUN-ko-Uo8">
+                                <rect key="frame" x="26" y="392" width="559" height="417"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <string key="text">Ennui church-key lomo, chicharrones williamsburg pitchfork typewriter tofu. Hella knausgaard 90's XOXO waistcoat, man bun seitan chillwave taxidermy brooklyn tattooed iPhone. Gentrify green juice leggings lumbersexual. Health goth flannel normcore, artisan craft beer four loko sartorial affogato tattooed. Biodiesel raw denim polaroid freegan blue bottle listicle, ugh bespoke try-hard lomo pug keffiyeh. Gochujang artisan humblebrag microdosing, pour-over beard franzen put a bird on it fixie kale chips. Banh mi godard heirloom, leggings post-ironic taxidermy chambray typewriter fingerstache cred.
+
+Vice mustache seitan, tacos hella tousled selfies cliche quinoa cronut. Lo-fi yuccie ugh cronut, whatever authentic skateboard. Neutra meh YOLO vinyl, swag photo booth stumptown actually. Plaid freegan waistcoat before they sold out. Selvage vegan roof party try-hard, kombucha celiac williamsburg. DIY narwhal celiac austin normcore, selfies ramps. Freegan occupy keffiyeh, knausgaard polaroid fingerstache wayfarers photo booth pour-over four loko beard plaid austin.
+
+Chartreuse gastropub kombucha thundercats. Cred tote bag cronut, selfies gochujang williamsburg stumptown deep v franzen venmo distillery blue bottle banjo mlkshk. Put a bird on it kogi raw denim celiac chillwave. Flexitarian mixtape everyday carry, lumbersexual stumptown scenester polaroid synth cold-pressed locavore schlitz freegan raw denim. Cold-pressed wayfarers yuccie twee, chillwave microdosing try-hard gentrify chicharrones. Blue bottle fashion axe kickstarter drinking vinegar neutra williamsburg chia tofu direct trade. Yr bespoke listicle gluten-free lumbersexual DIY actually, small batch mixtape.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tY8-9b-0Xd">
+                                <rect key="frame" x="26" y="178" width="240" height="128"/>
+                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                            </imageView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Name" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fGX-Di-fQM">
+                                <rect key="frame" x="337" y="169" width="97" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="classNameLabel" destination="ojh-h4-J3O" id="CTm-so-7T5"/>
+                        <outlet property="coverImage" destination="oFN-fL-Czl" id="ccW-BF-M9O"/>
+                        <outlet property="interestingFactLabel" destination="7vz-9I-Pjr" id="0Sa-I2-eN9"/>
+                        <outlet property="nameLabel" destination="fGX-Di-fQM" id="u32-U4-tcW"/>
+                        <outlet property="profileImage" destination="tY8-9b-0Xd" id="4jy-ys-npJ"/>
+                        <outlet property="profileTextView" destination="lUN-ko-Uo8" id="c4U-EJ-kxJ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aaP-vW-nZk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="446" y="519"/>
+        </scene>
+    </scenes>
+</document>
